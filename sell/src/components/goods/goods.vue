@@ -68,7 +68,7 @@
   export default {
     name: ' ',
 
-    data () {
+    data () {//wwwwwww
       return {
         Bus:new Vue(),//中央事件总线(用于抛物线小球)
         goods: [],
