@@ -1,0 +1,21 @@
+goods页面，商品列表页面的‘-’，‘+’按钮组件的开发
+
+$dispatch 已经废除，建议使用vuex  或者 $emit $on
+$dispatch 和 $broadcast 已经被弃用
+
+ this.$emit('cart.add',event.target);来代替$dispatch
+
+vue1中是在
+events:｛
+   //监听事件的派发
+｝
+在vue2中是在
+created:{
+  //监听派发事件
+}
+并且还建议我们
+// 清除事件监听
+beforeDestroy: function () {
+  this.$off('add-todo', this.addTodo)
+  this.$off('delete-todo', this.deleteTodo)
+},
